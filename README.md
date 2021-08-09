@@ -94,13 +94,18 @@ SSH into the control node and follow the steps below:
 - Update the /etc/ansible/hosts file to include the webserver IPs and the ELKServer IP.
 - Run the playbook, and navigate to http://<ELK_VM Public IP>:5601/app/kibana#/home to check that the installation worked as expected.
 
-_Answer the following questions to fill in the blanks:_
-- _Which file is the playbook?_  install-elk.yml
-	- _Where do you copy it?_ /etc/ansible/
-- _Which file do you update to make Ansible run the playbook on a specific machine?_ /etc/ansible/hosts
-- _How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ In the hosts file, you can specify which server group and associated IPs you want to update and run the playbook.
-- _Which URL do you navigate to in order to check that the ELK server is running?_ http://<ELK_VM Public IP>:5601/app/kibana#/home
+Answer the following questions to fill in the blanks:
+- Which file is the playbook?  
+	_install-elk.yml_
+	- Where do you copy it? 
+		_/etc/ansible/_
+- Which file do you update to make Ansible run the playbook on a specific machine?
+	_/etc/ansible/hosts_
+- How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+	_In the hosts file, you can specify which server group and associated IPs you want to update and run the playbook._
+- Which URL do you navigate to in order to check that the ELK server is running?
+	_http://<ELK_VM Public IP>:5601/app/kibana#/home_
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-	ansible-playbook /etc/ansible/install-elk.yml
+	_$ ansible-playbook /etc/ansible/install-elk.yml_
