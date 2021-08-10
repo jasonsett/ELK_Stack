@@ -56,7 +56,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-1    | No                 | 10.0.0.4                |
 | Web-2    | No                 | 10.0.0.4                |
 | Web-3    | No                 | 10.0.0.4                |
-| ELK-VM   | No                 | 173.79.250.49, 10.0.0.4 |
+| ELK-VM   | Yes                | 173.79.250.49, 10.0.0.4 |
 
 ### Elk Configuration
 
